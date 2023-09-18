@@ -1,7 +1,7 @@
 class Main {
   variable0: Int;
   variable1: IO <- new IO;
-  variable2: S#tring;
+  variable2: String;
   main(): Object { 
     {
       variable0 <- 1;

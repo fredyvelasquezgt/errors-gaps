@@ -1,0 +1,74 @@
+class Car  {
+    power_btn: Bool;
+    start(): Bool {
+        {
+            power_btn <- true;
+            return (power_btn);
+        }
+    };
+
+    stop(): Bool{
+        {
+            power_btn <- false;
+
+            return (power_btn);
+        }
+    };
+
+    honk(): String {
+        return ("Honk");
+    };
+
+
+};
+
+class Toyota inherits Car {
+    
+    carr : new Car;
+    power : Bool;
+
+    start(): Bool {
+        {
+            power <- true;
+            return (power);
+        }
+    };
+    
+    honk(): String {
+        return ("Honk");
+    };
+
+    encender : Bool;
+    init() : Bool {
+        {
+            return(true);
+        }
+    };
+};
+
+class Main {
+    numero : Int;
+    x : Bool;
+    y : Int <- 8;
+    z : Int <- 20;
+
+    main() : Int {
+        {    
+        while y < z loop
+            {
+                out_string("y is ");
+            }
+                
+            pool;
+
+        if y < z then
+            out_string("2 es menor que 3");
+        else
+            out_string("2 no es menor que 3");
+        fi;
+        return(0);
+        }
+    };
+};
+
+
